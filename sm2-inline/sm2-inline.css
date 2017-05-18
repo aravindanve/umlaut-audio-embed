@@ -1,0 +1,100 @@
+ul.sm2-inline li a,
+ul.sm2-inline li a.sm2_link {
+    background-color: #555;
+    color: #fff;
+}
+
+ul.sm2-inline li a.sm2_link:hover {
+    background-color: #7DC670;
+    color: #fff;
+}
+
+ul.sm2-inline li a.sm2_playing {
+    background-color: #E9582B;
+    color: #fff;
+}
+
+ul.sm2-inline li a.sm2_playing:hover {
+    background-color: #E54242;
+    color: #fff;
+}
+
+ul.sm2-inline li a.sm2_paused {
+    background-color: #999;
+    color: #fff;
+}
+
+ul.sm2-inline li a.sm2_paused:hover {
+    background-color: #888;
+    color: #fff;
+}
+
+/* colors ^ */
+
+ul.sm2-inline {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+ul.sm2-inline {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul.sm2-inline li {
+    margin-bottom: 5px;
+}
+
+ul.sm2-inline li a,
+ul.sm2-inline li a.sm2_link {
+    position: relative;
+    display: inline-block;
+    padding: 15px 15px 15px 3em;
+    vertical-align: middle;
+    text-decoration: none;
+    font-weight: normal;
+    color: #f6f9ff;
+    width: 100%;
+}
+
+ul.sm2-inline li a.sm2_link {
+    -webkit-transition-property:hover;
+    -webkit-transition: background-color 0.15s linear;
+    -moz-transition: background-color 0.15s linear 0s;
+    -o-transition-property: background-color; 
+    -o-transition-duration: 0.15s;
+}
+
+ul.sm2-inline li a:before, 
+ul.sm2-inline li a.sm2_paused:before:hover,
+ul.sm2-inline li a.sm2_link:before:hover,
+ul.sm2-inline li a.sm2_playing:before,
+ul.sm2-inline li a.sm2_playing:before:hover {
+    font-family: FontAwesome;
+    margin-right: 15px;
+    font-size: 1.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    margin-left: 15px;
+}
+
+ul.sm2-inline li a:before, 
+ul.sm2-inline li a.sm2_paused:before:hover,
+ul.sm2-inline li a.sm2_link:before:hover {
+    content: '\f144';
+}
+
+ul.sm2-inline li a.sm2_playing:before,
+ul.sm2-inline li a.sm2_playing:before:hover {
+    content: '\f28b';
+}
+
+body #sm2-container object,
+body #sm2-container embed {
+    left: -9999em;
+    top: -9999em;
+}
