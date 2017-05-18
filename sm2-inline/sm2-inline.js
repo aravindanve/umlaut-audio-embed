@@ -12,6 +12,8 @@
  *
  */
 
+ var SOUNDMANAGER_SWF_URL = '../soundmanager2/swf/';
+
 function InlinePlayer() {
   var self = this;
   var pl = this;
@@ -243,11 +245,13 @@ var inlinePlayer = null;
 soundManager.setup({
   // disable or enable debug output
   debugMode: false,
+  debugFlash: false,
+  useConsole: false,
   // use HTML5 audio for MP3/MP4, if available
   preferFlash: false,
   useFlashBlock: true,
   // path to directory containing SM2 SWF
-  // url: '', // removed by @aravindanve
+  url: SOUNDMANAGER_SWF_URL,
   // optional: enable MPEG-4/AAC support (requires flash 9)
   flashVersion: 9
 });

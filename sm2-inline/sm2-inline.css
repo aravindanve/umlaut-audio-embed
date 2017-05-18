@@ -60,7 +60,7 @@ ul.sm2-inline li a.sm2_link {
 }
 
 ul.sm2-inline li a.sm2_link {
-    -webkit-transition-property:hover;
+    -webkit-transition-property: hover;
     -webkit-transition: background-color 0.15s linear;
     -moz-transition: background-color 0.15s linear 0s;
     -o-transition-property: background-color; 
