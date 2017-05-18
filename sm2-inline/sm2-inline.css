@@ -68,10 +68,10 @@ ul.sm2-inline li a.sm2_link {
 }
 
 ul.sm2-inline li a:before, 
-ul.sm2-inline li a.sm2_paused:before:hover,
-ul.sm2-inline li a.sm2_link:before:hover,
+ul.sm2-inline li a.sm2_paused:hover:before,
+ul.sm2-inline li a.sm2_link:hover:before,
 ul.sm2-inline li a.sm2_playing:before,
-ul.sm2-inline li a.sm2_playing:before:hover {
+ul.sm2-inline li a.sm2_playing:hover:before {
     font-family: FontAwesome;
     margin-right: 15px;
     font-size: 1.5em;
@@ -83,13 +83,13 @@ ul.sm2-inline li a.sm2_playing:before:hover {
 }
 
 ul.sm2-inline li a:before, 
-ul.sm2-inline li a.sm2_paused:before:hover,
-ul.sm2-inline li a.sm2_link:before:hover {
+ul.sm2-inline li a.sm2_paused:hover:before,
+ul.sm2-inline li a.sm2_link:hover:before {
     content: '\f144';
 }
 
 ul.sm2-inline li a.sm2_playing:before,
-ul.sm2-inline li a.sm2_playing:before:hover {
+ul.sm2-inline li a.sm2_playing:hover:before {
     content: '\f28b';
 }
 
