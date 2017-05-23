@@ -9,11 +9,15 @@
 
     var PLAY_SELECTOR = '[data-play]';
     var PLAY_ID_ATTRIBUTE = 'data-play';
+    var PLAY_PLAYING_CLASS = 'playing';
+    var PLAY_ICON_SELECTOR = '[data-play-icon]';
     var PLAYLIST_SELECTOR = '[data-playlist]';
     var PLAYLIST_ID_ATTRIBUTE = 'data-playlist';
     var PLAYER_ID_ATTRIBUTE = 'data-player';
     var PLAYER_HIDDEN_CLASS = 'hidden';
 
+    var playIconTemplate = '<span class="fa fa-play-circle"></span>';
+    var pauseIconTemplate = '<span class="fa fa-pause-circle"></span>';
     var playerTemplate = '\
     <div class="sm2-bar-ui full-width fixed hidden">\
     <div class="bd sm2-main-controls">\
@@ -106,6 +110,8 @@
             $('body').append($player);
         }
 
+        $(PLAY_ICON_SELECTOR).html(playIconTemplate);
+
         initSm2Playlists();
         setTimeout(setupEventHandlers, 100);
     }
@@ -113,6 +119,8 @@
     function setupEventHandlers() {
         $(document).on('click', PLAY_SELECTOR, function (e) {
             var playId = $(this).attr(PLAY_ID_ATTRIBUTE);
+            var playing = $(this).hasClass(PLAY_PLAYING_CLASS);
+
             if (playlists && 
                 playlists[playId]) {
                 $('.sm2-bar-ui').each(function () {
@@ -121,9 +129,26 @@
                         $elem[0].__player.actions.close();
                     }
                 });
-                playlists[playId][0] && 
-                    (playlists[playId][0].__player.actions.play());
-                $(playlists[playId]).removeClass(PLAYER_HIDDEN_CLASS);
+
+                $(PLAY_SELECTOR)
+                    .removeClass(PLAY_PLAYING_CLASS);
+                    
+                $(PLAY_ICON_SELECTOR)
+                    .html(playIconTemplate);
+
+                if (!playing) {
+                    playlists[playId][0] && 
+                        (playlists[playId][0]
+                            .__player.actions.play());
+
+                    $(playlists[playId])
+                        .removeClass(PLAYER_HIDDEN_CLASS);
+
+                    $(this)
+                        .addClass(PLAY_PLAYING_CLASS)
+                        .find(PLAY_ICON_SELECTOR)
+                        .html(pauseIconTemplate);
+                }
             }
             return false;
         });
