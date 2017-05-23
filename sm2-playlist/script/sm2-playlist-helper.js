@@ -23,7 +23,7 @@
     <div class="bd sm2-main-controls">\
         <div class="sm2-inline-element sm2-button-element">\
             <div class="sm2-button-bd">\
-                <a href="#play" class="sm2-inline-button play-pause">Play / pause</a>\
+                <a href="#play" class="sm2-inline-button play-pause"></a>\
                     </div>\
                 </div>\
             <div class="sm2-inline-element sm2-inline-status">\
@@ -48,22 +48,22 @@
             <div class="sm2-inline-element sm2-button-element sm2-volume">\
             <div class="sm2-button-bd">\
                 <span class="sm2-inline-button sm2-volume-control volume-shade"></span>\
-                    <a href="#volume" class="sm2-inline-button sm2-volume-control">volume</a>\
+                    <a href="#volume" class="sm2-inline-button sm2-volume-control"></a>\
                     </div>\
                 </div>\
             <div class="sm2-inline-element sm2-button-element">\
             <div class="sm2-button-bd">\
-                <a href="#prev" title="Previous" class="sm2-inline-button previous">&lt; previous</a>\
+                <a href="#prev" title="Previous" class="sm2-inline-button previous"></a>\
                     </div>\
                 </div>\
             <div class="sm2-inline-element sm2-button-element">\
             <div class="sm2-button-bd">\
-                <a href="#next" title="Next" class="sm2-inline-button next">&gt; next</a>\
+                <a href="#next" title="Next" class="sm2-inline-button next"></a>\
                     </div>\
                 </div>\
             <div class="sm2-inline-element sm2-button-element sm2-menu">\
             <div class="sm2-button-bd">\
-                <a href="#menu" class="sm2-inline-button menu">menu</a>\
+                <a href="#menu" class="sm2-inline-button menu"></a>\
                     </div>\
                 </div>\
             <div class="sm2-inline-element sm2-button-element sm2-close">\

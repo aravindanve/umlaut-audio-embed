@@ -45,6 +45,20 @@
     display: none !important;
 }
 
+.sm2-bar-ui .sm2-inline-element,
+.sm2-bar-ui .sm2-button-element .sm2-button-bd {
+    min-height: 6em;
+}
+
+.sm2-bar-ui.fixed .bd.sm2-playlist-drawer,
+.sm2-bar-ui.bottom .bd.sm2-playlist-drawer {
+    bottom: 6em;
+}
+
+.sm2-progress-bd {
+    margin-bottom: 1em;
+}
+
 .sm2-close {
     display: flex;
     align-items: center;
@@ -290,7 +304,6 @@ transition: background 0.2s ease-in-out;
 * NOTE: match these values if you want square UI buttons.
 */
 min-width: 2.8em;
-min-height: 4em;
 }
 
 .sm2-bar-ui .sm2-inline-button {
@@ -776,12 +789,6 @@ image-rendering: crisp-edges;
 .sm2-bar-ui.fixed .sm2-playlist-wrapper,
 .sm2-bar-ui.bottom .sm2-playlist-wrapper {
     padding-bottom: 0px;
-}
-
-.sm2-bar-ui.fixed .bd.sm2-playlist-drawer,
-.sm2-bar-ui.bottom .bd.sm2-playlist-drawer {
-    /* show playlist on top */
-    bottom: 4em;
 }
 
 .sm2-bar-ui .bd.sm2-playlist-drawer {
