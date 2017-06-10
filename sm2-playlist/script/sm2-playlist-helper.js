@@ -45,18 +45,18 @@
                         </div>\
                     </div>\
                 </div>\
-            <div class="sm2-inline-element sm2-button-element sm2-volume">\
+            <div class="sm2-inline-element sm2-button-element sm2-volume mobile-hidden">\
             <div class="sm2-button-bd">\
                 <span class="sm2-inline-button sm2-volume-control volume-shade"></span>\
                     <a href="#volume" class="sm2-inline-button sm2-volume-control"></a>\
                     </div>\
                 </div>\
-            <div class="sm2-inline-element sm2-button-element">\
+            <div class="sm2-inline-element sm2-button-element mobile-hidden">\
             <div class="sm2-button-bd">\
                 <a href="#prev" title="Previous" class="sm2-inline-button previous"></a>\
                     </div>\
                 </div>\
-            <div class="sm2-inline-element sm2-button-element">\
+            <div class="sm2-inline-element sm2-button-element mobile-hidden">\
             <div class="sm2-button-bd">\
                 <a href="#next" title="Next" class="sm2-inline-button next"></a>\
                     </div>\

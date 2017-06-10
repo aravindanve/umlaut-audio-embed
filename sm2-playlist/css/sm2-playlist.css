@@ -37,6 +37,12 @@
 
 /* colors ^ */
 
+@media (max-width: 768px) {
+    .sm2-bar-ui .mobile-hidden {
+        display: none !important;
+    }
+}
+
 [data-playlist] {
     display: none !important;
 }
